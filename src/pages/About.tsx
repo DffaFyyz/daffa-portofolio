@@ -9,7 +9,7 @@ export function About() {
       <SectionHeader
         eyebrow="About"
         title="A backend-focused builder preparing for product-minded engineering work."
-        description="Daffa's portfolio is shaped around clear systems, calm interfaces, and a practical path toward Apple Developer Academy @ BINUS preparation."
+        description="Daffa's portfolio is shaped around clear systems, calm interfaces, and practical product-minded engineering work."
       />
       <AboutSection />
       <GlassPanel className="mb-20 rounded-2xl p-6">

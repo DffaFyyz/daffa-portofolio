@@ -1,3 +1,24 @@
+import alzheimerHome from "../assets/projects/Alzheimer Classification/home.png";
+import alzheimerPredict from "../assets/projects/Alzheimer Classification/Predict.png";
+import himtiShortener from "../assets/projects/HIMTI Internal Tools/internal-tools-shortener.png";
+import himtiUsers from "../assets/projects/HIMTI Internal Tools/users.png";
+import malariaHome from "../assets/projects/Malaria Detection/home.png";
+import malariaPredict from "../assets/projects/Malaria Detection/predict.png";
+import retentioCustomers from "../assets/projects/Retentio/customers.png";
+import retentioLogin from "../assets/projects/Retentio/login.png";
+import retentioOverview from "../assets/projects/Retentio/overview.png";
+
+export type ProjectImage = {
+  src: string;
+  alt: string;
+  label: string;
+};
+
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -6,40 +27,146 @@ export type Project = {
   tags: string[];
   impact: string[];
   status: string;
+  images: ProjectImage[];
+  links?: ProjectLink[];
 };
 
 export const projects: Project[] = [
   {
-    slug: "eduflow-api",
-    title: "EduFlow API",
+    slug: "himti-internal-tools",
+    title: "HIMTI Internal Tools",
     summary:
-      "Scalable backend system for an education platform with role-based access and real-time notifications.",
+      "Internal web tools for HIMTI operations, including URL shortening, user management, and organization workflows.",
     description:
-      "A backend-focused education platform foundation designed around clean service boundaries, predictable APIs, and maintainable access control.",
-    tags: ["NestJS", "PostgreSQL", "Redis", "Docker"],
-    impact: ["Role-based access control", "Real-time notification flow", "API-first architecture"],
-    status: "Selected Work",
+      "A suite of internal tools built to support HIMTI BINUS web operations and reduce repetitive administrative work. The platform focuses on maintainable organization utilities, including a URL shortener, account management, and internal service workflows used by the web division.",
+    tags: ["Internal Tools", "Web Platform", "CI/CD", "Admin System"],
+    impact: [
+      "Built operational tools for HIMTI web division workflows.",
+      "Supported URL shortening and user management use cases.",
+      "Designed around maintainability for organization services.",
+    ],
+    status: "Organization Platform",
+    images: [
+      {
+        src: himtiShortener,
+        alt: "HIMTI Internal Tools URL shortener interface",
+        label: "URL Shortener",
+      },
+      {
+        src: himtiUsers,
+        alt: "HIMTI Internal Tools user management interface",
+        label: "Users",
+      },
+    ],
+    links: [
+      {
+        label: "GitHub Organization",
+        href: "https://github.com/HIMTI-Binus-University",
+      },
+    ],
   },
   {
-    slug: "ai-research-assistant",
-    title: "AI Research Assistant",
+    slug: "retentio",
+    title: "Retentio",
     summary:
-      "RAG-based assistant for academic research using retrieval, summarization, and source grounding.",
+      "Machine learning customer retention platform using XGBoost to predict churn and surface customer risk signals.",
     description:
-      "An AI workflow that helps users search, summarize, and reason over research material while keeping generated answers tied to source context.",
-    tags: ["Python", "LangChain", "Pinecone", "OpenAI"],
-    impact: ["Retrieval-augmented generation", "Source-grounded responses", "Research workflow support"],
-    status: "AI System",
+      "Retentio is a machine learning based customer retention project that uses XGBoost to predict customer churn. It combines model-driven risk prediction with a product dashboard, customer records, and overview screens so churn insights can be reviewed through a clean operational interface.",
+    tags: ["XGBoost", "Machine Learning", "Churn Prediction", "Dashboard"],
+    impact: [
+      "Used XGBoost to support customer churn prediction workflows.",
+      "Presented machine learning insights through dashboard and customer views.",
+      "Built product screens including login, overview, and customer management.",
+    ],
+    status: "ML Product",
+    images: [
+      {
+        src: retentioOverview,
+        alt: "Retentio overview dashboard screen",
+        label: "Overview",
+      },
+      {
+        src: retentioCustomers,
+        alt: "Retentio customers management screen",
+        label: "Customers",
+      },
+      {
+        src: retentioLogin,
+        alt: "Retentio login screen",
+        label: "Login",
+      },
+    ],
+    links: [
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/DffaFyyz/retentio-app",
+      },
+    ],
   },
   {
-    slug: "himti-binus-website",
-    title: "HIMTI BINUS Website",
+    slug: "alzheimer-classification",
+    title: "Alzheimer Classification",
     summary:
-      "Official website for HIMTI BINUS with modern design, CMS integration, and performance optimization.",
+      "Deep learning classification project using ResNet50 with a web prediction workflow for Alzheimer-related image analysis.",
     description:
-      "A public-facing organization website focused on clean content structure, responsive delivery, and sustainable maintenance for the web team.",
-    tags: ["Next.js", "Sanity CMS", "Tailwind CSS", "Vercel"],
-    impact: ["CMS-backed publishing", "Responsive UI system", "Performance-minded frontend"],
-    status: "Web Platform",
+      "A deep learning medical-image classification project using ResNet50 for Alzheimer classification. The project presents the prediction workflow through a web interface with a clear home screen, upload/prediction flow, and result-oriented experience.",
+    tags: ["ResNet50", "Deep Learning", "Classification", "Computer Vision"],
+    impact: [
+      "Used ResNet50 as the deep learning backbone for classification.",
+      "Presented model predictions through a simple web workflow.",
+      "Connected medical-image AI experimentation with an accessible product experience.",
+    ],
+    status: "Deep Learning",
+    images: [
+      {
+        src: alzheimerHome,
+        alt: "Alzheimer Classification home screen",
+        label: "Home",
+      },
+      {
+        src: alzheimerPredict,
+        alt: "Alzheimer Classification prediction screen",
+        label: "Prediction",
+      },
+    ],
+    links: [
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/DffaFyyz/alzheimer-detection",
+      },
+    ],
+  },
+  {
+    slug: "malaria-detection",
+    title: "Malaria Detection",
+    summary:
+      "Machine learning malaria detection project with Logistic Regression and Random Forest model options.",
+    description:
+      "A machine learning project for malaria detection workflows with two available model options: Logistic Regression and Random Forest. The web interface provides a clear entry point and prediction screen so users can run model-based detection through a more approachable product experience.",
+    tags: ["Machine Learning", "Logistic Regression", "Random Forest", "Prediction UI"],
+    impact: [
+      "Implemented two model options: Logistic Regression and Random Forest.",
+      "Built a prediction-oriented interface for malaria detection workflows.",
+      "Structured the app around a direct home-to-prediction flow.",
+    ],
+    status: "ML Detection",
+    images: [
+      {
+        src: malariaHome,
+        alt: "Malaria Detection home screen",
+        label: "Home",
+      },
+      {
+        src: malariaPredict,
+        alt: "Malaria Detection prediction screen",
+        label: "Prediction",
+      },
+    ],
+    links: [
+      {
+        label: "GitHub Repository",
+        href: "https://github.com/DffaFyyz/malaria-detection-app",
+      },
+    ],
   },
 ];

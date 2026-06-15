@@ -13,7 +13,7 @@ export function Resume() {
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <SectionHeader
           eyebrow="Resume"
-          title="A compact overview for opportunities and academy preparation."
+          title="A compact overview for opportunities and technical work."
           description={personal.summary}
         />
         <Button variant="primary" icon={<ArrowDownToLine className="h-4 w-4" aria-hidden="true" />}>

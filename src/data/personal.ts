@@ -6,7 +6,7 @@ export const personal = {
    summary:
       "Computer Science student at BINUS University with a passion for building scalable systems, clean APIs, and intelligent experiences. Web Development Manager at HIMTI BINUS.",
    about:
-      "I’m a Computer Science student who enjoys turning ideas into meaningful digital experiences. I like building clean, efficient, and thoughtful solutions that solve real problems and create value for users. I’m naturally curious and always learning, whether it’s exploring new technologies, improving my craft, or taking on challenging projects. I aim to keep growing as a developer and builder while making a positive impact through the work I create.",
+      "My interest in technology started from curiosity about servers, networking, and how digital systems connect people. That curiosity grew through software engineering in vocational high school, real-world development projects, and my current journey as a Computer Science student at BINUS University. Now, I’m diving deeper into AI, machine learning, and intelligent systems while continuing to build practical web products. I like to see myself as someone who keeps adapting with technology: curious enough to explore, patient enough to learn, and excited enough to keep building.",
    location: "Jakarta, Indonesia",
    timezone: "GMT+7",
    education: "Computer Science, BINUS University",
@@ -19,8 +19,8 @@ export const personal = {
       { label: "Education", value: "Computer Science, BINUS University" },
       { label: "Based in", value: "Jakarta / Tangerang, Indonesia" },
    ],
-   email: "daffa@example.com",
-   github: "https://github.com/",
-   linkedin: "https://linkedin.com/",
+   email: "daffafay1617@gmail.com",
+   github: "https://github.com/DffaFyyz",
+   linkedin: "https://www.linkedin.com/in/daffa-fayyaz-erzeltra-7ab803322/",
    resumeUrl: "#resume",
 };

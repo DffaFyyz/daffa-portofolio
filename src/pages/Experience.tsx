@@ -8,7 +8,7 @@ export function Experience() {
     <Container className="relative z-10 pt-36 pb-24">
       <SectionHeader
         eyebrow="Experience"
-        title="Leadership, computer science, and academy preparation."
+        title="Leadership, computer science, and technical execution."
         description="A concise timeline of roles and preparation areas relevant to professional opportunities."
       />
       <div className="mt-12 grid gap-4">
