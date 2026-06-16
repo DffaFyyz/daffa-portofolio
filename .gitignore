@@ -33,3 +33,8 @@ dist-ssr
 # Claude
 CLAUDE.md
 .claude/
+
+AGENTS.md 
+.agents/
+.codex/
+
