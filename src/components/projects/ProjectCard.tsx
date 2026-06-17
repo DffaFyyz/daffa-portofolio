@@ -29,7 +29,7 @@ export function ProjectCard({ project, index, onSelect }: ProjectCardProps) {
             <img
               src={primaryImage.src}
               alt={primaryImage.alt}
-              className="h-full w-full object-contain p-2"
+              className="h-full w-full object-contain p-2.5 sm:p-3"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.12)_46%,rgba(0,0,0,0.78)),radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.10),transparent_34%)]" />

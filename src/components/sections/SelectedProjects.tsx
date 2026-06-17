@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projects } from "../../data/projects";
 import type { Project } from "../../data/projects";
+import { cn } from "../../lib/utils";
 import { ProjectCard } from "../projects/ProjectCard";
 import { ProjectDetailModal } from "../projects/ProjectDetailModal";
 import { SectionHeader } from "../ui/SectionHeader";
@@ -22,12 +23,19 @@ export function SelectedProjects() {
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <ProjectCard
+            <div
               key={project.slug}
-              project={project}
-              index={index}
-              onSelect={setSelectedProject}
-            />
+              className={cn(
+                projects.length === 5 && index === 3 && "lg:col-start-1 lg:translate-x-[calc(50%+0.75rem)]",
+                projects.length === 5 && index === 4 && "lg:col-start-2 lg:translate-x-[calc(50%+0.75rem)]",
+              )}
+            >
+              <ProjectCard
+                project={project}
+                index={index}
+                onSelect={setSelectedProject}
+              />
+            </div>
           ))}
         </div>
       </section>

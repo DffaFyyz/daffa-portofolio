@@ -15,7 +15,7 @@ export const personal = {
    availabilityDetail: "Open to interesting projects and collaborations.",
    homeSummary: [
       { label: "Role", value: "Software Developer" },
-      { label: "Focus", value: "Full-Stack Development, Product & Experience" },
+      { label: "Focus", value: "Full-Stack Development, DevOps, Machine Learning, Deep Learning" },
       { label: "Education", value: "Computer Science, BINUS University" },
       { label: "Based in", value: "Jakarta / Tangerang, Indonesia" },
    ],

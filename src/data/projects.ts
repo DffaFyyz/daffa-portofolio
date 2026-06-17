@@ -1,12 +1,21 @@
 import alzheimerHome from "../assets/projects/Alzheimer Classification/home.png";
 import alzheimerPredict from "../assets/projects/Alzheimer Classification/Predict.png";
+import alzheimerResearch from "../assets/projects/Alzheimer Classification/research.png";
+import himtiLogin from "../assets/projects/HIMTI Internal Tools/Login.png";
 import himtiShortener from "../assets/projects/HIMTI Internal Tools/internal-tools-shortener.png";
 import himtiUsers from "../assets/projects/HIMTI Internal Tools/users.png";
+import malariaFeatureExtraction from "../assets/projects/Malaria Detection/feature-extraction.png";
 import malariaHome from "../assets/projects/Malaria Detection/home.png";
 import malariaPredict from "../assets/projects/Malaria Detection/predict.png";
+import retentioCustomerDetail from "../assets/projects/Retentio/customer-detail.png";
 import retentioCustomers from "../assets/projects/Retentio/customers.png";
 import retentioLogin from "../assets/projects/Retentio/login.png";
 import retentioOverview from "../assets/projects/Retentio/overview.png";
+import retentioSignup from "../assets/projects/Retentio/signup.png";
+import tinyCareBookings from "../assets/projects/TinyCareHub/bookings.png";
+import tinyCareChat from "../assets/projects/TinyCareHub/chat.png";
+import tinyCareDaycares from "../assets/projects/TinyCareHub/daycares.png";
+import tinyCareHome from "../assets/projects/TinyCareHub/home.png";
 
 export type ProjectImage = {
   src: string;
@@ -57,6 +66,11 @@ export const projects: Project[] = [
         alt: "HIMTI Internal Tools user management interface",
         label: "Users",
       },
+      {
+        src: himtiLogin,
+        alt: "HIMTI Internal Tools login screen",
+        label: "Login",
+      },
     ],
     links: [
       {
@@ -91,9 +105,19 @@ export const projects: Project[] = [
         label: "Customers",
       },
       {
+        src: retentioCustomerDetail,
+        alt: "Retentio customer detail and churn prediction screen",
+        label: "Customer Detail",
+      },
+      {
         src: retentioLogin,
         alt: "Retentio login screen",
         label: "Login",
+      },
+      {
+        src: retentioSignup,
+        alt: "Retentio sign up screen",
+        label: "Sign Up",
       },
     ],
     links: [
@@ -128,6 +152,11 @@ export const projects: Project[] = [
         alt: "Alzheimer Classification prediction screen",
         label: "Prediction",
       },
+      {
+        src: alzheimerResearch,
+        alt: "Alzheimer Classification research information screen",
+        label: "Research",
+      },
     ],
     links: [
       {
@@ -161,11 +190,53 @@ export const projects: Project[] = [
         alt: "Malaria Detection prediction screen",
         label: "Prediction",
       },
+      {
+        src: malariaFeatureExtraction,
+        alt: "Malaria Detection feature extraction screen",
+        label: "Feature Extraction",
+      },
     ],
     links: [
       {
         label: "GitHub Repository",
         href: "https://github.com/DffaFyyz/malaria-detection-app",
+      },
+    ],
+  },
+  {
+    slug: "tinycarehub",
+    title: "TinyCareHub",
+    summary:
+      "Daycare discovery and booking platform with daycare listings, booking flows, and parent-caregiver chat.",
+    description:
+      "TinyCareHub is a childcare service platform concept designed around daycare discovery, booking management, and direct communication. The project brings together daycare listings, booking screens, and chat-based coordination into a practical product experience for parents and daycare providers.",
+    tags: ["Web App", "Booking Flow", "Chat", "Product UI"],
+    impact: [
+      "Built product screens for daycare discovery, bookings, and communication.",
+      "Structured user flows around parent needs and daycare service management.",
+      "Designed a practical interface for service browsing and coordination.",
+    ],
+    status: "Product Platform",
+    images: [
+      {
+        src: tinyCareHome,
+        alt: "TinyCareHub home screen",
+        label: "Home",
+      },
+      {
+        src: tinyCareDaycares,
+        alt: "TinyCareHub daycare listings screen",
+        label: "Daycares",
+      },
+      {
+        src: tinyCareBookings,
+        alt: "TinyCareHub bookings screen",
+        label: "Bookings",
+      },
+      {
+        src: tinyCareChat,
+        alt: "TinyCareHub chat screen",
+        label: "Chat",
       },
     ],
   },
