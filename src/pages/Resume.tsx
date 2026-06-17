@@ -16,7 +16,13 @@ export function Resume() {
           title="A compact overview for opportunities and technical work."
           description={personal.summary}
         />
-        <Button variant="primary" icon={<ArrowDownToLine className="h-4 w-4" aria-hidden="true" />}>
+        <Button
+          href={personal.resumeUrl}
+          variant="primary"
+          icon={<ArrowDownToLine className="h-4 w-4" aria-hidden="true" />}
+          target="_blank"
+          rel="noreferrer"
+        >
           Download
         </Button>
       </div>

@@ -58,7 +58,7 @@ export function Button(props: ButtonProps | LinkButtonProps | AnchorButtonProps)
 
   if ("href" in props && props.href) {
     return (
-      <a className={cn(base, variants[variant], className)} href={props.href}>
+      <a className={cn(base, variants[variant], className)} {...(rest as AnchorButtonProps)} href={props.href}>
         {content}
       </a>
     );

@@ -1,4 +1,5 @@
 import { ArrowDownToLine } from "lucide-react";
+import { personal } from "../../data/personal";
 import { Button } from "../ui/Button";
 import { GlassPanel } from "../ui/GlassPanel";
 
@@ -12,13 +13,16 @@ export function ResumeSection() {
             A concise snapshot of my work, skills, and direction.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-text-secondary">
-            Resume download is kept as a dedicated call-to-action for this landing page phase.
+            A quick overview of my experience across backend development, machine learning projects,
+            organization work, and the systems I have built while growing as a Computer Science student.
           </p>
         </div>
         <Button
+          href={personal.resumeUrl}
           variant="primary"
           icon={<ArrowDownToLine className="h-4 w-4" aria-hidden="true" />}
-          onClick={() => undefined}
+          target="_blank"
+          rel="noreferrer"
         >
           Download Resume
         </Button>
